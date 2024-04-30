@@ -1,7 +1,7 @@
-# DMES - Digital Manufacturing Execution System
+# DMES - Decentralized Manufacturing Execution System
 
 ## Overview
-DMES is a full-featured Digital Manufacturing Execution System designed to streamline the manufacturing process from inventory management to shipping. This system integrates various modules including inventory, orders, packing, and process steps management, all backed with blockchain technology for enhanced security and traceability.
+DMES is a full-featured Decentralized Manufacturing Execution System designed to streamline the manufacturing process from inventory management to shipping. This system integrates various modules including inventory, orders, packing, and process steps management, all backed with blockchain technology for enhanced security and traceability.
 
 ## Key Features
 - **Inventory Management:** Track and manage parts inventory.
