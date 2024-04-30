@@ -1,0 +1,218 @@
+/* General styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Header styles with space for app name and logout button */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0056b3;
+  color: #fff;
+  padding: 10px 20px;  /* Adjusted padding for better spacing */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-name {
+  font-size: 28px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.logout-button {
+  padding: 8px 16px;
+  background-color: #057eff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #007bff;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 70px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container2 {
+  padding-top: 80px;
+}
+
+.container2 h1 {
+  text-align: center;
+}
+
+.tile-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+}
+
+.tile-container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Changed to auto-fit */
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  justify-content: center;
+}
+
+.tile-container-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.dashboard-tile {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.dashboard-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+header {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  padding: 10px 0; /* Adds vertical space around headings */
+}
+
+form {
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+/* Form styling */
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 16px; /* Increased bottom margin for spacing between form elements */
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  accent-color: #007bff; /* Changes the color of the checkbox when checked (modern browsers) */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over the checkbox */
+  transform: scale(1.5); /* Increase the checkbox size; adjust the scale factor as needed */
+  margin: 0; /* Removes default margin */
+  width: auto;
+}
+
+/* Style for the label */
+label {
+  margin: 0;
+  /* Add any additional styles you want for the label */
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center; /* Vertically center aligns items */
+  gap: 10px; /* Adjust the space between the checkbox and label */
+}
+
+button, input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline-block; /* Aligns buttons next to each other if needed */
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+
+  button, input[type="submit"] {
+      width: 100%; /* Ensures buttons span the full width on smaller screens */
+  }
+}
+
+/* Utility styles for spacing and alignment */
+.mt-20 {
+  margin-top: 20px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
